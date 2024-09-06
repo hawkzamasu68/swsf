@@ -1,0 +1,106 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: url('https://i.pinimg.com/originals/2f/a1/cf/2fa1cf9c8435ecd55b9d3bf01b678816.gif') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Headline styles */
+  .headline {
+    text-align: center; /* Center-align the headline */
+    margin-bottom: 30px;
+  }
+  
+  .current-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 0, 0); /* Default color, animated by keyframes */
+    animation: color-change 3s infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: rgb(255, 0, 0);
+    }
+    33% {
+      color: rgb(0, 255, 0);
+    }
+    66% {
+      color: rgb(0, 0, 255);
+    }
+    100% {
+      color: rgb(255, 0, 0);
+    }
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Solid white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center-align summary section */
+  .summary {
+    display: flex;
+    justify-content: center; /* Center-align summary items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    gap: 20px; /* Add spacing between summary items */
+    margin-bottom: 40px;
+  }
+  
+  .summary-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 18%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-item h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .summary-item p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Table styles */
+  .transaction-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .transaction-table th {
+    background-color: #f7f7f7;
+    font-size: 16px;
+  }
+  
+  .transaction-table td {
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  /* Hover animation for table rows */
+  .transaction-table tr:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
